@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAINBOW</title>
+    <script>
+        var red = false;
+        var orange = false;
+        var yellow = false;
+        var green = false;
+        var blue = false;
+        var indigo = false;
+        var violet = false;
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        html, body
+        {
+            height:100%;
+            overflow: hidden;
+            
+        }
+        #title
+        {
+            text-align: center;
+            border-bottom: 5px dotted black ;
+            margin: 0px;
+            padding: 30px;
+            background-color: black;
+            color:white;
+        }
+        #container
+        {
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            height:100%;
+            font-size: 50px;
+        }
+        .item
+        {
+            text-align: center;
+
+        }
+        #red
+        {
+            background-color: rgb(250, 182, 182);
+        }
+        #orange
+        {
+            background-color: rgb(243, 215, 164);
+        }
+        #yellow
+        {
+            background-color: rgb(240, 240, 175);
+        }
+        #green
+        {
+            background-color: rgb(180, 255, 180);
+        }
+        #blue
+        {
+            background-color: rgb(176, 176, 250);
+        }
+        #indigo
+        {
+            background-color: rgb(220, 172, 255);
+        }
+        #violet
+        {
+            background-color: rgb(255, 170, 255);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 id="title">//RAINBOW//</h1>
+    <div id="container">
+        <div class="item" id="red">
+            <input type="button" 
+            style="width:70px;height:70px;margin:20px;font-size: 50px;"
+            value="R"
+            onclick="
+            if (red === false)
+            {
+                $('#red').css('background-color','red');
+                red = true;
+            }
+            else
+            {
+                $('#red').css('background-color','rgb(250, 182, 182)');
+                red = false;
+            }
+            ">
+        </div>
+        <div class="item" id="orange">
+            <input type="button" 
+            style="width:70px;height:70px;margin:20px;font-size: 50px;"
+            value="A"
+            onclick="
+            if (orange === false)
+            {
+                $('#orange').css('background-color','orange');
+                orange = true;
+            }
+            else
+            {
+                $('#orange').css('background-color','rgb(243, 215, 164)');
+                orange = false;
+            }
+            ">
+        </div>
+        <div class="item" id="yellow">
+            <input type="button" 
+            style="width:70px;height:70px;margin:20px;font-size: 50px;"
+            value="I"
+            onclick="
+            if (yellow === false)
+            {
+                $('#yellow').css('background-color','yellow');
+                yellow = true;
+            }
+            else
+            {
+                $('#yellow').css('background-color','rgb(240, 240, 175)');
+                yellow = false;
+            }
+            ">
+        </div>
+        <div class="item" id="green">
+            <input type="button" 
+            style="width:70px;height:70px;margin:20px;font-size: 50px;"
+            value="N"
+            onclick="
+            if (green === false)
+            {
+                $('#green').css('background-color','green');
+                green = true;
+            }
+            else
+            {
+                $('#green').css('background-color','rgb(180, 255, 180)');
+                green = false;
+            }
+            ">
+        </div>
+        <div class="item" id="blue">
+            <input type="button" 
+            style="width:70px;height:70px;margin:20px;font-size: 50px;"
+            value="B"
+            onclick="
+            if (blue === false)
+            {
+                $('#blue').css('background-color','blue');
+                blue = true;
+            }
+            else
+            {
+                $('#blue').css('background-color','rgb(176, 176, 250)');
+                blue = false;
+            }
+            ">
+        </div>
+        <div class="item" id="indigo">
+            <input type="button" 
+            style="width:70px;height:70px;margin:20px;font-size: 50px;"
+            value="O"
+            onclick="
+            if (indigo === false)
+            {
+                $('#indigo').css('background-color','indigo');
+                indigo = true;
+            }
+            else
+            {
+                $('#indigo').css('background-color','rgb(220, 172, 255)');
+                indigo = false;
+            }
+            ">
+        </div>
+        <div class="item" id="violet">
+            <input type="button" 
+            style="width:70px;height:70px;margin:20px;font-size: 50px;"
+            value="W"
+            onclick="
+            if (violet === false)
+            {
+                $('#violet').css('background-color','violet');
+                violet = true;
+            }
+            else
+            {
+                $('#violet').css('background-color','rgb(255, 170, 255)');
+                violet = false;
+            }
+            ">
+        </div>
+    </div>
+    
+
+
+
+</body>
+</html>
